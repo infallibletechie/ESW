@@ -20,7 +20,9 @@
     console.log( 'checkBool is', checkBool );
     if ( checkBool == 'yes' ) {
 		  embedded_svc.settings.displayHelpButton = true;
-    }
+    } else {
+	embedded_svc.settings.displayHelpButton = false;
+	}
 		embedded_svc.settings.language = 'en-US';
 
 		embedded_svc.settings.enabledFeatures = ['LiveAgent'];
