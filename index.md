@@ -19,8 +19,10 @@
     const checkBool = allURLParams.get( 'checkBool' );
     console.log( 'checkBool is', checkBool );
     if ( checkBool == 'yes' ) {
-		  embedded_svc.settings.displayHelpButton = true;
+	console.log( 'Showing the Chat' );
+  	embedded_svc.settings.displayHelpButton = true;
     } else {
+	console.log( 'Hiding the Chat' );
 	embedded_svc.settings.displayHelpButton = false;
 	}
 		embedded_svc.settings.language = 'en-US';
